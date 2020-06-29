@@ -3,8 +3,8 @@ import './Info.css';
 const Info = () => {
     return (
         <>
-            <div className="container-fluid">
-                <div className="row my-5">
+            <div className="container-fluid" style={{backgroundColor:"#facc2e"}}>
+                <div className="row py-5">
                     <div className="col-12 col-md-4">
                         <div className="caja-info">
                             <div className="icono">

@@ -4,9 +4,13 @@
     height: auto;
     text-align: center;
     padding: 20px;
-    background-color: wheat;
     font-size: 15px;
-    color: #403236;
+    background-color: #262626;
+    color: white;
+    font-weight: 800 !important;
+    margin-bottom: 17px;
+    font-weight: 800;
+    letter-spacing: 1px;
 }
 
 .caja-info i{
@@ -16,6 +20,12 @@
 
 .caja-info h5{
     font-family: 'MuseoModerno', cursive;
+    color: #6a8f42;
+    font-weight: 800;
+}
+
+.icono{
+    color: wheat;
 }
 
 .caja-info p{

@@ -4,7 +4,7 @@ import './CasoExito.css';
 const CasoExito = () => {
     return (
         <div className="container-fluid casoExito__container">
-            <div className="row w-100 card-exito">
+            <div className="row card-exito">
                 <div className="col-12 col-md-6 card-exito-div">
                     <Exito/>
                 </div>

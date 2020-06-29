@@ -18,7 +18,7 @@ const Home = () => {
             </div>
             <CasoExito/>
             <Info/>
-            <div className="jumbotron container-fluid">
+            <div className="jumbotron container-fluid container__banner__info">
                 <div className="row row-servicios">
                     <div className="col-12 col-md-6">
                         <a className="enlace-servicios my-4" href="/servicios">Industias en donde nos especializamos</a>

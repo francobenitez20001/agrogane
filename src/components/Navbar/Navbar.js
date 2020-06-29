@@ -16,7 +16,6 @@ const Navbar = () => {
     const handleClickMenu=()=>{
         document.getElementsByClassName('menu__container')[0].classList.toggle('ocultarMenu');
         document.getElementsByClassName('logo-title')[0].classList.toggle('d-none');
-        document.getElementsByTagName('nav')[0].classList.toggle('d-none');
         document.getElementsByTagName('nav')[0].classList.toggle('showMenuMobile');
         document.getElementsByClassName('page')[0].classList.toggle('adaptarPage');
     }

@@ -1,11 +1,12 @@
 .casoExito__container{
     height: 700px;
-    background: linear-gradient(-90deg,#fafafa 68%,#4ca1c2 32%);
+    background: linear-gradient(-90deg,#fafafa 68%,#262626 32%);
     display: flex;
     align-items: center;
 }
 .card-exito{
     padding-left: 93px;
+    width: 100%;
 }
 
 .explicacion__exito{
@@ -34,7 +35,9 @@
         flex-direction: row-reverse;
     }
     .card-exito {
-        padding-left:0px
+        padding-left:0px;
+        flex-direction: column-reverse;
+        width: auto !important;
     }
     
     .w-100 {
@@ -45,6 +48,8 @@
         margin-top: 33px;
         height: 314px;
         justify-content: start;
+        margin-bottom: 20px;
+        padding-bottom: 20px;
     }
     .explicacion__exito h4{
         font-weight: bold;

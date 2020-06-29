@@ -31,6 +31,11 @@
     transition: all 1s ease;
 }
 
+.container__banner__info{
+    background-color: #262626 !important;
+    color: white;
+}
+
 .enlace-servicios{
     display: flex;
     height: 70px;
@@ -60,7 +65,7 @@
 .c-two-boxes__title{
     writing-mode: vertical-lr;
     text-align: left;
-    border-bottom: 4px solid #403236;
+    border-bottom: 4px solid #6a8f42;
     position: relative;
 }
 
@@ -70,10 +75,10 @@
 }
 
 .container__testimonio{
-    padding-left: 300px;
-    display:flex;
-    flex-direction:column;
-    justify-content:center;
+    padding-left: 300px!important;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
 }
 
 @media(min-width:1441px){

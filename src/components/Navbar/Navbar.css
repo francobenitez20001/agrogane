@@ -2,7 +2,7 @@
 .menu__container{
     width: 170px;
     height: 100vh;
-    background-color: #403236;
+    background-color: #2e7737 !important;
     position: fixed;
     top: 0px;
     padding: 0px 24px;
@@ -85,6 +85,10 @@
     transition: width 175ms ease-in-out
 }
 
+.showMenuMobile{
+    display: none!important;
+}
+
 @media (min-width: 1024px){
     .list__menu li a{
         font-size: 14px;
@@ -119,7 +123,7 @@
     }
 
     nav{
-        display: none;
+        display: none !important;
     }
     .ocultarMenu{
         width: 100% !important;

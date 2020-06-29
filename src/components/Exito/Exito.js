@@ -5,15 +5,15 @@ import CardActionArea from '@material-ui/core/CardActionArea';
 import CardContent from '@material-ui/core/CardContent';
 import CardMedia from '@material-ui/core/CardMedia';
 import Typography from '@material-ui/core/Typography';
+import './Exito.css';
 const useStyles = makeStyles({
     root: {
-      height: 500,
+      height: "100%",
     },
     media: {
-      height: 300,
+      height: "300",
     },
 });
-
 const Exito = () => {
     const classes = useStyles();
     return (

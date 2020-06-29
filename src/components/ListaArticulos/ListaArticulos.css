@@ -13,7 +13,7 @@
     font-weight: 800;
     line-height: 1;
     margin-bottom: 4px;
-    color: #403236;
+    color: #232323;
 }
 
 .fecha .fecha__mes{
@@ -21,7 +21,7 @@
     font-weight: 700;
     text-transform: uppercase;
     letter-spacing: 1px;
-    color: #403236;
+    color: #232323;
 }
 
 .nota__info .titulo__articulo{
@@ -30,7 +30,7 @@
     margin-bottom: 0;
     line-height: normal;
     margin-bottom: 5px;
-    color: #403236;
+    color: #5dc269;
 }
 
 .nota__info .autor{

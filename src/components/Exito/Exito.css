@@ -12,8 +12,10 @@
 }
 
 @media(max-width:375px){
-    .jss1 {
-        height: 370px !important;
-        margin-top: 47px;
+    .makeStyles-root-1 {
+        height: 376px;
+    }
+    .makeStyles-media-2 {
+        height: 160px !important;
     }
 }
