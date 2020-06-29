@@ -1,0 +1,133 @@
+@import url('https://fonts.googleapis.com/css2?family=Raleway&family=Roboto&family=Roboto+Mono&display=swap');
+.menu__container{
+    width: 170px;
+    height: 100vh;
+    background-color: #403236;
+    position: fixed;
+    top: 0px;
+    padding: 0px 24px;
+    transition: width 175ms ease-in-out;
+    z-index: 1000;
+}
+
+.logo{
+    display: inline-flex;
+    height: 72px;
+    align-items: center;
+    width: 100%;
+}
+
+.logo .logo-title{
+    font-family: 'Raleway', sans-serif;
+    font-weight: 600;
+    font-size: 20px;
+    padding: 12px 0px 0px 10px;
+    color: white;
+}
+
+.logo .title-mobile{
+    display: none;
+}
+
+.logo .icon-menu{
+    font-size: 20px;
+    color: white;
+    margin:0px;
+    cursor: pointer;
+}
+
+.list__menu{
+    width: 100%;
+    padding: 32px 0px 8px 0px;
+    list-style: none;
+}
+
+.list__menu li{
+    margin-bottom: 24px;
+}
+
+.list__menu li a{
+    font-family: 'Raleway', sans-serif;
+    font-weight: 600;
+    font-size: 18px;
+    line-height: 24px;
+    white-space: nowrap;
+    transition: .25s ease-in-out all;
+    color: #fff;
+}
+
+.list__menu li a:hover{
+    text-decoration: none;
+}
+
+.enlace__active{
+    padding-left: 8px;
+}
+
+.c-header__pointer{
+    opacity: 1;
+    position: absolute;
+    width: 8px;
+    height: 24px;
+    background: #fff;
+    transition: .25s ease-in-out all;
+    display: block;
+    left: -32px;
+    top: 105px;
+}
+
+.c_header__pointer-show{
+    left: 0px;
+}
+
+.ocultarMenu{
+    width: 70px !important;
+    transition: width 175ms ease-in-out
+}
+
+@media (min-width: 1024px){
+    .list__menu li a{
+        font-size: 14px;
+        line-height: 24px;
+    }
+}
+
+@media(max-width:768px){
+    .menu__container{
+        height: 50px;
+        width: 100%;
+        transition: height 175ms ease-in-out
+    }
+
+    .logo{
+        height: 50px;
+    }
+
+    .logo .title-mobile{
+        display: block;
+        width: 100%;
+        text-align: end;
+        padding-top: 7px;
+        font-family: 'Raleway', sans-serif;
+        font-weight: 600;
+        font-size: 20px;
+        padding: 12px 0px 0px 10px;
+        color: white;
+    }
+    .logo .logo-title{
+        display: none;
+    }
+
+    nav{
+        display: none;
+    }
+    .ocultarMenu{
+        width: 100% !important;
+        height: 100vh;
+        transition: height 175ms ease-in-out
+    }
+
+    .showMenuMobile{
+        display: block!important;
+    }
+}

@@ -1,0 +1,57 @@
+.casoExito__container{
+    height: 700px;
+    background: linear-gradient(-90deg,#fafafa 68%,#4ca1c2 32%);
+    display: flex;
+    align-items: center;
+}
+.card-exito{
+    padding-left: 93px;
+}
+
+.explicacion__exito{
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    font-family: 'Raleway', sans-serif;
+}
+
+.explicacion__exito h4{
+    font-weight: bold;
+    font-size: 40px;
+}
+
+.explicacion__exito a{
+    margin-top: 70px;
+    font-weight: bold;
+    color: #4ca1c2;   
+}
+.explicacion__exito a:hover{
+    text-decoration: none;
+}
+
+@media(max-width:768px){
+    .casoExito__container{
+        flex-direction: row-reverse;
+    }
+    .card-exito {
+        padding-left:0px
+    }
+    
+    .w-100 {
+        width: auto !important;
+    }
+    .explicacion__exito{
+        background-color: white;
+        margin-top: 33px;
+        height: 314px;
+        justify-content: start;
+    }
+    .explicacion__exito h4{
+        font-weight: bold;
+        font-size: 25px;
+        margin-top: 23px;
+    }
+    .explicacion__exito a{
+        margin-top: 20px;  
+    }
+}

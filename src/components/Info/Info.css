@@ -1,0 +1,23 @@
+
+@import url('https://fonts.googleapis.com/css2?family=MuseoModerno&display=swap');
+.caja-info{
+    height: auto;
+    text-align: center;
+    padding: 20px;
+    background-color: wheat;
+    font-size: 15px;
+    color: #403236;
+}
+
+.caja-info i{
+    font-size: 30px;
+    margin-bottom: 10px;
+}
+
+.caja-info h5{
+    font-family: 'MuseoModerno', cursive;
+}
+
+.caja-info p{
+    font-family: 'Raleway', sans-serif;
+}

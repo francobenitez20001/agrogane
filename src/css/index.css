@@ -1,0 +1,24 @@
+/*
+        rosa:C26782
+        verde:AEC24C
+        azul:222D75
+        gris:A4A7BA
+    */
+
+.page{
+    margin-left:170px;
+}
+
+.adaptarPage{
+    margin-left: 70px !important;
+}
+
+@media(max-width:768px){
+    .page {
+        margin-left: 0px;
+        margin-top: 50px;
+    }
+    .adaptarPage{
+        margin-left: 0px !important;
+    }
+}

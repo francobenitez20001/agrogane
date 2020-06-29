@@ -1,0 +1,40 @@
+.info__testimonio{
+    margin-top: 30px;
+}
+
+.info__testimonio img{
+    height: 50px;
+    border-radius: 50%;
+}
+
+.info__testimonio p{
+    display: inline;
+    margin-left: 10px;
+}
+
+.info__testimonio .nombre__testimonio{
+    font-size: 16px;
+    font-style: italic;
+    letter-spacing: .5px;
+    color: #403236!important;
+    font-weight: 800;
+
+}
+
+.testimonio{
+    font-size: 18px;
+    font-style: oblique;
+}
+
+.icono-testimonio{
+    position: relative;
+    right: 100%;
+    font-size: 25px;
+    color: #403236;
+}
+
+@media(max-width:768px){
+    .icono-testimonio{
+        right: 89%;
+    }
+}
