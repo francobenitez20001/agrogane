@@ -1,6 +1,14 @@
 import React from 'react';
 import './Info.css';
 const Info = () => {
+    window.addEventListener('scroll',event=>{
+        let scroll = window.scrollY;
+        if(scroll>750 && scroll<1071){
+            for (let index = 0; index < document.getElementsByClassName('caja-info').length; index++) {
+                document.getElementsByClassName('caja-info')[index].classList.add('showCaja');
+            }
+        }
+    })
     return (
         <>
             <div className="container-fluid" style={{backgroundColor:"#facc2e"}}>

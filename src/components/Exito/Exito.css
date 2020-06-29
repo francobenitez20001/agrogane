@@ -1,3 +1,14 @@
+.makeStyles-root-1 {
+    height: 100%;
+    position: relative;
+    left: -170%;
+}
+
+.showCard{
+    left: 0px;
+    transition: all 1s ease !important;
+}
+
 @media(max-width:768px){
     .jss1 {
         height: 352px !important;

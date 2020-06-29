@@ -81,9 +81,13 @@
     justify-content: center;
 }
 
+.c__art__test{
+    width: 100%;
+}
+
 @media(min-width:1441px){
     .banner__home p{
-        font-size: 48px;
+        font-size: 30px;
     }
     
     .banner__home .name__banner{
@@ -106,6 +110,10 @@
 
     .info-seccion{display: none;}
     .container__testimonio{
-        padding-left:0px
-     }
+        padding-left:0px !important;
+        margin-top: 20px;
+    }
+    .c__art__test{
+        width: auto;
+    }
 }

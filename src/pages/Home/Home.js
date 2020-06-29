@@ -34,7 +34,7 @@ const Home = () => {
                 </div>
             </div>
             <div className="container-fluid">
-                <div className="row w-100">
+                <div className="row c__art__test">
                     <div className="col-12 col-md-5">
                         <ArticulosRecientes/>
                     </div>

@@ -11,7 +11,7 @@ const Footer = () => {
                         <li><i className="fas fa-envelope"></i> info@agrogane.com.ar</li>
                     </ul>
                 </div>
-                <div className="col-12 d-flex justify-content-between row-final-footer">
+                <div className="col-12 d-flex justify-content-between row-final-footer container__redes">
                     <div className="redes">
                         <i className="fab fa-twitter"></i>
                         <i className="fab fa-instagram"></i>

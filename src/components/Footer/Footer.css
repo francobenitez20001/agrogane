@@ -23,6 +23,10 @@ footer .redes i{
 }
 
 @media(max-width:768px){
+    .container__redes{
+        flex-direction: column;
+        align-items: center;
+    }
     footer ul{
         display: block!important;
     }
@@ -33,7 +37,7 @@ footer .redes i{
     .row-final-footer{
         display: block!important;
     }
-    .redes{text-align: center;margin-bottom: 20px;}
+    .redes{display: flex;margin-bottom: 20px;}
 }
 
 @media(max-width:375px){

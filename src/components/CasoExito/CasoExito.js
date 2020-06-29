@@ -2,6 +2,13 @@ import React from 'react';
 import Exito from '../Exito/Exito'
 import './CasoExito.css';
 const CasoExito = () => {
+    window.addEventListener('scroll',event=>{
+        let scroll = window.scrollY;
+        if(scroll>285.60 && scroll<1428){
+            document.getElementsByClassName('makeStyles-root-1')[0].classList.add('showCard');
+            document.getElementsByClassName('explicacion__exito')[0].classList.add('showExplicacionExito');
+        }
+    })
     return (
         <div className="container-fluid casoExito__container">
             <div className="row card-exito">

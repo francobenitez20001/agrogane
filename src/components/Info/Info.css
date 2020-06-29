@@ -11,6 +11,8 @@
     margin-bottom: 17px;
     font-weight: 800;
     letter-spacing: 1px;
+    position: relative;
+    bottom: -100%;
 }
 
 .caja-info i{
@@ -30,4 +32,20 @@
 
 .caja-info p{
     font-family: 'Raleway', sans-serif;
+}
+
+.showCaja{
+    bottom: 0px;
+    transition: all 1s ease;
+}
+
+@media(min-width:1441px){
+    .caja-info{
+        font-size: 12px;
+        line-height: 20px;
+    }
+
+    .caja-info i{
+        font-size: 25px;
+    }
 }
