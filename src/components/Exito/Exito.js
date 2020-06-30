@@ -5,13 +5,14 @@ import CardActionArea from '@material-ui/core/CardActionArea';
 import CardContent from '@material-ui/core/CardContent';
 import CardMedia from '@material-ui/core/CardMedia';
 import Typography from '@material-ui/core/Typography';
+import avatar from '../../img/caso-exito.jpg'
 import './Exito.css';
 const useStyles = makeStyles({
     root: {
-      height: "100%",
+      height: "auto",
     },
     media: {
-      height: "300",
+      height: 300,
     },
 });
 const Exito = () => {
@@ -21,18 +22,12 @@ const Exito = () => {
       <CardActionArea>
         <CardMedia
           className={classes.media}
-          image="https://images.unsplash.com/photo-1495107334309-fcf20504a5ab?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1350&q=80"
+          image={avatar}
           title="Contemplative Reptile"
         />
         <CardContent>
           <Typography gutterBottom variant="h5" component="h2">
-            Lizard
-          </Typography>
-          <Typography variant="body2" color="textSecondary" component="p">
-            Lizards are a widespread group of squamate reptiles, with over 6,000 species, ranging
-            across all continents except AntarcticaLizards are a widespread group of squamate reptiles, with over 6,000 species, ranging
-            across all continents except AntarcticaLizards are a widespread group of squamate reptiles, with over 6,000 species, ranging
-            across all continents except AntarcticaLizards are a widespread group of squamate reptiles, with over 6,000 species, 
+            Inversión extranjera Agrícola Ganadera
           </Typography>
         </CardContent>
       </CardActionArea>

@@ -16,8 +16,8 @@ const CasoExito = () => {
                     <Exito/>
                 </div>
                 <div className="col-12 col-md-6 explicacion__exito">
-                    <h4>Titulo del caso de éxito</h4>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ea a vero doloribus illum minus dolorem sed porro. Officiis id iste nam veniam suscipit obcaecati distinctio assumenda eaque et, veritatis sapiente saepe eius itaque temporibus, facere in dolore!.</p>
+                    <h4>Inversión inicial 360000 uss</h4>
+                    <p>Concentrar una superficie productiva integrada por 5 establecimientos con una superficie total de 6000 has mixtas compradas a un promedio de 600uss/ha. donde se llegó a un potencial productivo muy grande incorporando a campos naturales en ese momento de compra, las actividades cría, invernada de la propia producción, agricultura (girasol, trigo) pasturas coasociadas base alfalfa, IATF, servicio 15 meses etc. Los valores actuales de estos campos son de 5000uss/ha</p>
                     <a href="/casos-exito" className="linkCasoExito">Ver más casos de exito</a>
                 </div>
             </div>

@@ -10,15 +10,8 @@
 }
 
 @media(max-width:768px){
-    .jss1 {
-        height: 352px !important;
-        margin-top: 47px;
-    }
-    .jss2 {
-        height: 127px !important;
-    }
-    .card-exito-div p{
-        font-size: 13px !important;
+    .makeStyles-media-2 {
+        height: 140px !important;
     }
 }
 
