@@ -22,7 +22,7 @@ const Navbar = () => {
     return (
         <div className="menu__container">
             <div className="logo">
-                <i onClick={handleClickMenu} className="fas fa-bars icon-menu"></i>
+                <i onClick={handleClickMenu} className="fas fa-align-left icon-menu"></i>
                 <h1 className="logo-title">Agrogane</h1>
                 <h2 className="title-mobile">Agrogane</h2>
             </div>
@@ -35,7 +35,7 @@ const Navbar = () => {
                     </li>
                     <li onMouseOver={()=>handleOverLink(true,1)}
                         onMouseLeave={() => handleOverLink(false,1)}>
-                        <a href="/" className="item-menu">Servicios</a>
+                        <a href="/servicios" className="item-menu">Servicios</a>
                     </li>
                     <li onMouseOver={()=>handleOverLink(true,2)} 
                         onMouseLeave={() => handleOverLink(false,2)}>

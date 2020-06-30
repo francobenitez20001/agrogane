@@ -1,0 +1,91 @@
+.heading__content{
+    padding-bottom: 30px;
+}
+
+.heading__title {
+    font: 40px/48px MaisonNeue_Bold,Arial,sans-serif;
+    text-align: left;
+    margin-bottom: 25px;
+}
+
+.heading__description {
+    margin-bottom: 15px;
+    text-align: left;
+    font: 18px/24px MaisonNeue_Medium,Arial,sans-serif;
+}
+
+.indicator__top{
+    display: block;
+    width: 40px;
+    height: 5px;
+    background-color: #2e7737;
+    position: absolute;
+    top: 16px;
+    right: 10vh;
+    transform: rotate(90deg);
+    writing-mode: vertical-lr;
+}
+
+.section__servicios{
+    margin-bottom: 50px;
+}
+
+.col__separador {
+    padding-top: 48px;
+    padding-bottom: 32px;
+    overflow: hidden;
+}
+
+.col__separador h3{
+    padding: 10px;
+    position: relative;
+    overflow: hidden;
+    margin: 0;
+    font-family: MaisonNeue_Bold,Arial,sans-serif;
+    font-size: 14px;
+    line-height: 24px;
+    letter-spacing: 0;
+    text-align: center;
+    text-transform: uppercase;
+    color: #2e7737;
+}
+
+#txt{
+    position: relative;
+    bottom: 13px;
+    background-color: white;
+    padding: 20px;
+}
+
+.line{
+    content: '';
+    position: relative !important;
+    overflow: hidden;
+    display: block;
+    top: 50%;
+    height: 1px;
+    position: absolute;
+    background: #000;
+}
+
+@media (min-width: 1024px){
+    .heading__content {
+        padding-top: 120px;
+    }
+    .item__container__servicios{
+        padding: 0px 140px !important;
+    }
+}
+
+@media (min-width: 768px){
+    .heading__content {
+        padding-top: 72px;
+    }
+    .heading__title {
+        margin-bottom: 30px;
+    }
+    .section__servicios .col__separador{
+        padding-top: 96px;
+        padding-bottom: 64px;
+    }
+}
