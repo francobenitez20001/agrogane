@@ -1,0 +1,99 @@
+
+.nosotros__txt{
+    text-align: justify;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    animation: all 1s ease;
+}
+
+.nosotros__txt h2{
+    color: #3f3f3f;
+    font-weight: 800;
+    font-size: 30px;
+    padding-bottom: 10px;
+    border-bottom-width: 2px;
+    border-bottom-style: solid;
+    border-color: #2e7737;
+    margin-bottom: 35px;
+}
+
+.nosotros__txt h6{
+    font-family: "Lato";
+    font-size: 16px;
+    line-height: 1.3;
+    margin-bottom: 18px;
+    font-weight: 400;
+    color: #3f3f3f;
+}
+
+.titulo__dueño{
+    font-family: 'Raleway', sans-serif;
+    margin-top: 30px;
+    margin-bottom: 20px;
+    color: #3f3f3f;
+    font-weight: 800;
+    font-size: 24px;
+    border-bottom-width: 2px;
+    border-bottom-style: solid;
+    border-color: #2e7737;
+}
+
+.datos__dueño img{
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    margin: 0px 0px 10px 0px;
+}
+
+.datos__dueño .dueño__nombre{
+    font-family: 'Raleway', sans-serif;
+    color: #3b3b3b;
+    font-weight: 800;
+    font-size: 16px;
+    margin-bottom: 0px;
+}
+
+.datos__dueño span{
+    font-family: 'Raleway', sans-serif;
+    font-weight: bold !important;
+}
+
+.container__info .imagen__info{
+    display: none;
+}
+.datos__dueño{
+    text-align: center;
+}
+
+@media(min-width:768px){
+    .container__info{
+        padding: 0px !important;
+    }
+    .nosotros__txt{
+        padding-right: 45px!important;
+    }
+    .container__info .imagen__info{
+        display: block;
+    }   
+}
+
+@media(max-width:768px){
+    .datos__dueño{
+        margin-bottom: 17px;
+    }
+    .nosotros__txt{
+        padding: 10px 0px;
+    }
+    .nosotros__txt h2{
+        font-size: 25px;
+        margin-bottom: 20px;
+    }
+    .nosotros__txt h6{
+        font-size: 14px;
+    }
+    .contenido__dueño .texto__dueño{
+        display: block;
+        text-align: justify;
+    }
+}

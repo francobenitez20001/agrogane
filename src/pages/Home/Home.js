@@ -10,6 +10,14 @@ const Home = () => {
         document.getElementsByTagName('p')[0].classList.add('showTxtBanner');
         document.getElementsByTagName('p')[1].classList.add('showTxtBanner');
     }
+    window.addEventListener('scroll',event=>{
+        let scroll = window.scrollY;
+        if(scroll>750 && scroll<1071){
+            for (let index = 0; index < document.getElementsByClassName('caja-info').length; index++) {
+                document.getElementsByClassName('caja-info')[index].classList.add('showCaja');
+            }
+        }
+    })
     return (
         <>
             <div className="banner__home">

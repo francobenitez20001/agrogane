@@ -1,7 +1,7 @@
 
 @import url('https://fonts.googleapis.com/css2?family=MuseoModerno&display=swap');
 .caja-info{
-    height: auto;
+    height: 295px;
     text-align: center;
     padding: 20px;
     font-size: 15px;
@@ -41,6 +41,7 @@
 
 @media(min-width:1441px){
     .caja-info{
+        height: auto;
         font-size: 12px;
         line-height: 20px;
     }

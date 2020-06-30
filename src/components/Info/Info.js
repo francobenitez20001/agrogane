@@ -1,14 +1,6 @@
 import React from 'react';
 import './Info.css';
 const Info = () => {
-    window.addEventListener('scroll',event=>{
-        let scroll = window.scrollY;
-        if(scroll>750 && scroll<1071){
-            for (let index = 0; index < document.getElementsByClassName('caja-info').length; index++) {
-                document.getElementsByClassName('caja-info')[index].classList.add('showCaja');
-            }
-        }
-    })
     return (
         <>
             <div className="container-fluid" style={{backgroundColor:"#facc2e"}}>
@@ -19,7 +11,7 @@ const Info = () => {
                                 <i className="fas fa-users"></i>
                             </div>
                             <h5>Titulo</h5>
-                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quis obcaecati distinctio autem doloribus quas maiores sunt ducimus minus illo inventore iure ipsam minima architecto nam culpa perspiciatis sint quod, dolorum assumenda voluptates excepturi atque tempore voluptatem omnis. Velit, eius? Sunt, pariatur corrupti perferendis aliquam quidem at. Nisi ex sit magnam!</p>
+                            <p>Con más de 35 años de experiencia en la localización, compra, asesoramiento y administración de campos en las pcia de Bs As, La Pampa, Corrientes. Liderando pooles de inversión agrícola ganaderos tanto con inversores nacionales como extranjeros</p>
                         </div>
                     </div>
                     <div className="col-12 col-md-4">
@@ -28,7 +20,7 @@ const Info = () => {
                                 <i className="fas fa-leaf"></i>
                             </div>
                             <h5>Titulo</h5>
-                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quis obcaecati distinctio autem doloribus quas maiores sunt ducimus minus illo inventore iure ipsam minima architecto nam culpa perspiciatis sint quod, dolorum assumenda voluptates excepturi atque tempore voluptatem omnis. Velit, eius? Sunt, pariatur corrupti perferendis aliquam quidem at. Nisi ex sit magnam!</p>
+                            <p>Implementado módulos de producción en cría y recría de hasta 5000has en la pcia. de Corrientes, desarrollando planes de negocios en el sector avícola, efectivizando los mismos con desarrollo de granjas de ponedoras en el área de Cardales y Opendoor.</p>
                         </div>
                     </div>
                     <div className="col-12 col-md-4">
@@ -37,7 +29,7 @@ const Info = () => {
                                 <i className="fas fa-globe-asia"></i>
                             </div>
                             <h5>Titulo</h5>
-                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quis obcaecati distinctio autem doloribus quas maiores sunt ducimus minus illo inventore iure ipsam minima architecto nam culpa perspiciatis sint quod, dolorum assumenda voluptates excepturi atque tempore voluptatem omnis. Velit, eius? Sunt, pariatur corrupti perferendis aliquam quidem at. Nisi ex sit magnam!</p>
+                            <p>Incursionando en el sector empresarial, ocupando cargos de gerente de administración en Papelera del Noa, como gerente y director comercial de Linera Bonaerense SA, potenciando sus habilidades administrativas como comerciales.</p>
                         </div>
                     </div>
                 </div>
