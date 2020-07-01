@@ -15,7 +15,7 @@ const useStyles = makeStyles({
       height: 300,
     },
 });
-const Exito = () => {
+const Exito = ({titulo}) => {
     const classes = useStyles();
     return (
     <Card className={classes.root}>
@@ -27,7 +27,7 @@ const Exito = () => {
         />
         <CardContent>
           <Typography gutterBottom variant="h5" component="h2">
-            Inversión extranjera Agrícola Ganadera
+            {titulo}
           </Typography>
         </CardContent>
       </CardActionArea>

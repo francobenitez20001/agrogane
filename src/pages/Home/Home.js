@@ -6,8 +6,14 @@ import CasoExito from '../../components/CasoExito/CasoExito';
 import ArticulosRecientes from '../../components/articulosRecientes/ArticulosRecientes';
 import Testimonio from '../../components/Testimonio/Testimonio';
 import Footer from '../../components/Footer/Footer';
+import exitos from "../../casosExito.json";
 
 export default class Home extends Component {
+    constructor(props) {
+        super(props);
+        this.exitos = exitos;
+    }
+    
     componentDidMount(){
         setTimeout(() => {
             document.getElementsByTagName('p')[0].classList.add('showTxtBanner');
@@ -20,7 +26,7 @@ export default class Home extends Component {
                     document.getElementsByClassName('caja-info')[index].classList.add('showCaja');
                 }
             }
-            if(document.location.href == 'http://localhost:3000/' || document.location.href.includes('caso-exito')){
+            if(document.location.href === 'http://localhost:3000/' || document.location.href.includes('caso-exito')){
                 if(scroll>285.60){
                     document.getElementsByClassName('makeStyles-root-1')[0].classList.add('showCard');
                     document.getElementsByClassName('explicacion__exito')[0].classList.add('showExplicacionExito');
@@ -35,7 +41,7 @@ export default class Home extends Component {
                     <p>Transformando ideas en negocios reales</p>
                     <p className="name__banner">Agrogane</p>
                 </div>
-                <CasoExito/>
+                <CasoExito caso={this.exitos[0]}/>
                 <Info/>
                 <div className="jumbotron container-fluid container__banner__info">
                     <div className="row row-servicios">

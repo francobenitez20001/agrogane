@@ -1,9 +1,6 @@
 import React, { Component } from 'react'
 import './Banner.css';
 export default class Banner extends Component {
-    constructor(props){
-        super(props);
-    }
     componentDidMount(){
         if(this.props.background!=null){document.getElementById('banner__servicios').classList.add('bg-image')};
     }
