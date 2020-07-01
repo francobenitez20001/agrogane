@@ -11,7 +11,7 @@ const Info = () => {
                                 <i className="fas fa-users"></i>
                             </div>
                             <h5>Titulo</h5>
-                            <p>Con más de 35 años de experiencia en la localización, compra, asesoramiento y administración de campos en las pcia de Bs As, La Pampa, Corrientes. Liderando pooles de inversión agrícola ganaderos tanto con inversores nacionales como extranjeros</p>
+                            <p>Ayudamos a nuestros clientes a mejorar sus resultados a través de la transformación del negocio, partiendo desde la definición estratégica hasta la mejora operativa, la redefinición de los procesos productivos y la implementación tecnológica necesaria. </p>
                         </div>
                     </div>
                     <div className="col-12 col-md-4">
@@ -20,7 +20,7 @@ const Info = () => {
                                 <i className="fas fa-leaf"></i>
                             </div>
                             <h5>Titulo</h5>
-                            <p>Implementado módulos de producción en cría y recría de hasta 5000has en la pcia. de Corrientes, desarrollando planes de negocios en el sector avícola, efectivizando los mismos con desarrollo de granjas de ponedoras en el área de Cardales y Opendoor.</p>
+                            <p>Acompañamos la decisión de inversión para maximizar el retorno, pero asegurando la relación riesgo-retorno de acuerdo al perfil de cada inversor y a sus objetivos. </p>
                         </div>
                     </div>
                     <div className="col-12 col-md-4">
@@ -29,7 +29,7 @@ const Info = () => {
                                 <i className="fas fa-globe-asia"></i>
                             </div>
                             <h5>Titulo</h5>
-                            <p>Incursionando en el sector empresarial, ocupando cargos de gerente de administración en Papelera del Noa, como gerente y director comercial de Linera Bonaerense SA, potenciando sus habilidades administrativas como comerciales.</p>
+                            <p>Segmentamos nuestras soluciones de inversión en BIG (+2M U$S), MID (500K-1.9M U$S), SMALL (100K-499K U$S) y FIRST INVESTMENT (10K-99k U$S), adaptando los planes de negocio y las soluciones a cada tipo de inversor. </p>
                         </div>
                     </div>
                 </div>

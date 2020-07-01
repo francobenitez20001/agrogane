@@ -89,3 +89,9 @@
         padding-bottom: 64px;
     }
 }
+
+@media(max-width:768px){
+    .banner__servicios{
+        margin-top: 80px;
+    }
+}

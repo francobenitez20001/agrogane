@@ -16,7 +16,7 @@ const Servicios = () => {
                         <span className="indicator__top"></span>
                         <div className="col-md-8 heading__content">
                             <h1 className="heading__title">
-                                <span>El amplio espectro digital</span>
+                                <span>Agrogane Servicios</span>
                             </h1>
                             <div className="heading__description">
                                 <p><span>Junto con un grupo de profesionales de vasta experiencia, conforman un equipo de especialistas que garantizan el máximo rendimiento de los activos de nuestros clientes.</span></p>

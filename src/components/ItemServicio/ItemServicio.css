@@ -21,14 +21,20 @@
     font-size: 19px;
     margin-bottom: 45px;
     text-align: justify;
+    white-space: pre-line;
 }
 
 .showExplicacion{
     display: block !important;
-    transition: all 1s ease;
+    animation: ease;
 }
-
 .rotateflecha{
     transform: rotate(180deg);
     transition: all 1s ease;
+}
+
+@media(max-width:768px){
+    .servicio__explicacion{
+        text-align: start;
+    }
 }

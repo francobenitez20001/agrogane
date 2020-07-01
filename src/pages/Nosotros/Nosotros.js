@@ -36,9 +36,10 @@ const Nosotros = () => {
                         <span className="text-muted">Ingeniero agrónomo</span>
                     </div>
                     <div className="col-12 col-md-9 texto__dueño">
-                        <p>Guy Sela is an agronomist by profession, and specializes in water, plant nutrition and digital agriculture. Guy has worked for the world’s leading agricultural companies and created SMART! Fertilizer Management, a leading digital-ag company, prior to starting his current venture – Cropaia.</p>
-                        <p>Guy spent many years researching and experimenting ways to improve agricultural production and bringing progress to the agricultural industry. Guy honed his skills on commercial farming projects around the world and by working with thousands of growers and agronomists globally.</p>
-                        <p>He has written over seventy different professional publications. His participation in conferences and symposiums has allowed him to share his knowledge, expertise as one of the leading plant nutrition experts in the world.</p>
+                        <p>Con más de 35 años de experiencia en la localización, compra, asesoramiento y administración de campos en las pcia de Bs As, La Pampa, Corrientes. Ha liderado pooles de inversión agrícola ganaderos tanto con inversores nacionales como extranjeros.</p>
+                        <p>Ha implementado módulos de producción en cría y recría de hasta 5000has en la pcia de corrientes, desarrollando planes de negocios en el sector avícola, efectivizando los mismos con desarrollo de granjas de ponedoras en el área de Cardales y Opendoor.
+                        </p>
+                        <p>Ha incursionado en el sector empresarial, ocupando cargos de gerente de administración en Papelera del Noa(inversión inicial 2millones de uss), como gerente y director comercial de Linera Bonaerense SA(7millones de uss  de facturación anual), potenciando sus habilidades administrativas como comerciales.</p>
                     </div>
                 </div>
             </div>
