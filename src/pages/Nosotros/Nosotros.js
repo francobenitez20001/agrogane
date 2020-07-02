@@ -4,8 +4,12 @@ import avatar from '../../img/avatar.jpeg';
 import Info from '../../components/Info/Info';
 import Footer from '../../components/Footer/Footer';
 import './Nosotros.css';
+
+import setActiveItem from '../../helpers/helpers';
+
 export default class Nosotros extends Component {
     componentDidMount(){
+        setActiveItem(window.location.href);
         setTimeout(() => {
             for (let index = 0; index < document.getElementsByClassName('caja-info').length; index++) {
                 document.getElementsByClassName('caja-info')[index].classList.add('showCaja');

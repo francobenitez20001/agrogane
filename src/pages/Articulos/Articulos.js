@@ -1,7 +1,11 @@
 import React, { Component } from 'react'
 import Banner from '../../components/Banner/Banner';
 import ListaArticulos from '../../components/ListaArticulos/ListaArticulos';
+import setActiveItem from '../../helpers/helpers';
 export default class Articulos extends Component {
+    componentDidMount(){
+        setActiveItem(window.location.href);
+    }
     render() {
         return (
             <>

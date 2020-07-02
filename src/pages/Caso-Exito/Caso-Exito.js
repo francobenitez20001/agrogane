@@ -3,13 +3,14 @@ import Banner from '../../components/Banner/Banner';
 import CasoExito from '../../components/CasoExito/CasoExito';
 import Footer from '../../components/Footer/Footer';
 import exitos from '../../casosExito.json';
-
+import setActiveItem from '../../helpers/helpers';
 export default class CasoExitoPage extends Component {
     constructor(props){
         super(props);
         this.exitos = exitos;
     }
     componentDidMount(){
+        setActiveItem(window.location.href);
         setTimeout(() => {
             for (let index = 0; index < document.getElementsByClassName('makeStyles-root-1').length; index++) {
                 document.getElementsByClassName('makeStyles-root-1')[index].classList.add('showCard');

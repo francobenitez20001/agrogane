@@ -4,9 +4,13 @@ import ItemServicio from '../../components/ItemServicio/ItemServicio';
 import Footer from '../../components/Footer/Footer';
 import data from '../../servicios.json';
 import './Servicios.css';
+
+import setActiveItem from '../../helpers/helpers';
+
 const Servicios = () => {
     const [services, setservices] = React.useState([]);
     React.useEffect(() => {
+        setActiveItem(window.location.href);
         setservices(data);
     }, []);
     return (

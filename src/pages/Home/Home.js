@@ -7,6 +7,7 @@ import ArticulosRecientes from '../../components/articulosRecientes/ArticulosRec
 import Testimonio from '../../components/Testimonio/Testimonio';
 import Footer from '../../components/Footer/Footer';
 import exitos from "../../casosExito.json";
+import setActiveItem from '../../helpers/helpers.js';
 
 export default class Home extends Component {
     constructor(props) {
@@ -15,6 +16,7 @@ export default class Home extends Component {
     }
     
     componentDidMount(){
+        setActiveItem(window.location.href);
         setTimeout(() => {
             document.getElementsByTagName('p')[0].classList.add('showTxtBanner');
             document.getElementsByTagName('p')[1].classList.add('showTxtBanner');

@@ -41,6 +41,9 @@
 }
 
 @media(max-width:768px){
+    .heading__title{
+        font-size: 29px;
+    }
     .bg-image {
         padding: 40px 0px 0px 0px;
         margin: 0px !important;

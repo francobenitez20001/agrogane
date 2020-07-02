@@ -15,7 +15,7 @@ const ItemServicio = ({servicio}) => {
                 <h3 className="ml-4 mr-auto">{servicio.servicio}</h3>
                 <i className="fas fa-angle-down flecha" onClick={()=>handleClickDescripcion(servicio.id)}></i>
             </div>
-            <div className="servicio__explicacion d-none">
+            <div className="servicio__explicacion d-none animated fadeIn fast">
                 <p>{servicio.texto}</p>
             </div>
         </div>
