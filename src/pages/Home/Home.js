@@ -30,7 +30,7 @@ export default class Home extends Component {
             }
             if(document.location.href === 'http://localhost:3000/' || document.location.href.includes('caso-exito')){
                 if(scroll>285.60){
-                    document.getElementsByClassName('makeStyles-root-1')[0].classList.add('showCard');
+                    document.getElementsByClassName('MuiPaper-root')[0].classList.add('showCard');
                     document.getElementsByClassName('explicacion__exito')[0].classList.add('showExplicacionExito');
                 }
             }

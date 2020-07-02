@@ -12,8 +12,8 @@ export default class CasoExitoPage extends Component {
     componentDidMount(){
         setActiveItem(window.location.href);
         setTimeout(() => {
-            for (let index = 0; index < document.getElementsByClassName('makeStyles-root-1').length; index++) {
-                document.getElementsByClassName('makeStyles-root-1')[index].classList.add('showCard');
+            for (let index = 0; index < document.getElementsByClassName('MuiPaper-root').length; index++) {
+                document.getElementsByClassName('MuiPaper-root')[index].classList.add('showCard');
                 document.getElementsByClassName('explicacion__exito')[index].classList.add('showExplicacionExito')
             }
         }, 10);
