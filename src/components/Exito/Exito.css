@@ -1,4 +1,4 @@
-.makeStyles-root-1 {
+.MuiPaper-root {
     height: 100%;
     position: relative;
     left: -170%;
@@ -10,16 +10,16 @@
 }
 
 @media(max-width:768px){
-    .makeStyles-media-2 {
+    .MuiCardMedia-root {
         height: 140px !important;
     }
 }
 
 @media(max-width:375px){
-    .makeStyles-root-1 {
+    .MuiPaper-root{
         height: 376px;
     }
-    .makeStyles-media-2 {
+    .MuiCardMedia-root {
         height: 160px !important;
     }
 }
