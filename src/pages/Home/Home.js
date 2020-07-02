@@ -23,15 +23,15 @@ export default class Home extends Component {
         }, 10);
         window.addEventListener('scroll',event=>{
             let scroll = window.scrollY;
-            if(scroll>750 && scroll<1071){
-                for (let index = 0; index < document.getElementsByClassName('caja-info').length; index++) {
-                    document.getElementsByClassName('caja-info')[index].classList.add('showCaja');
-                }
-            }
             if(document.location.href === 'http://localhost:3000/' || document.location.href.includes('caso-exito')){
                 if(scroll>285.60){
                     document.getElementsByClassName('MuiPaper-root')[0].classList.add('showCard');
                     document.getElementsByClassName('explicacion__exito')[0].classList.add('showExplicacionExito');
+                }
+            }
+            if(scroll>750 && scroll<1071){
+                for (let index = 0; index < document.getElementsByClassName('caja-info').length; index++) {
+                    document.getElementsByClassName('caja-info')[index].classList.add('showCaja');
                 }
             }
         })
