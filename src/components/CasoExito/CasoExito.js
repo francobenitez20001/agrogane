@@ -11,7 +11,7 @@ const CasoExito = ({moreInfo,caso}) => {
                 <div className="col-12 col-md-6 explicacion__exito">
                     <h4>{caso.subtitulo}</h4>
                     <p>{caso.descripcion}</p>
-                    {(moreInfo!=='false')?<a href="/casos-exito" className="linkCasoExito">Ver más casos de exito</a>:null}
+                    {(moreInfo!=='false')?<a href="/caso-exito" className="linkCasoExito">Ver más casos de exito</a>:null}
                 </div>
             </div>
         </div>
