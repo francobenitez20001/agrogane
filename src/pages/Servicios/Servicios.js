@@ -5,7 +5,7 @@ import Footer from '../../components/Footer/Footer';
 import data from '../../servicios.json';
 import './Servicios.css';
 
-import setActiveItem from '../../helpers/helpers';
+import {setActiveItem} from '../../helpers/helpers';
 
 const Servicios = () => {
     const [services, setservices] = React.useState([]);

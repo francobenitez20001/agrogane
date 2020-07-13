@@ -1,4 +1,4 @@
-export default function setActiveItem(url){
+export function setActiveItem(url){
     for (let index = 0; index < document.getElementsByClassName('item-menu').length; index++) {
         document.getElementsByClassName('item-menu')[index].classList.remove('active');
     }

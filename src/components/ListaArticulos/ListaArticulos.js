@@ -1,22 +1,69 @@
 import React from 'react';
+
 import './ListaArticulos.css';
-const ListaArticulos = () => {
+const ListaArticulos = ({foto,archivo,fecha,nombre,titulo}) => {
+    const setMesByNumber = numeroMes=>{
+        let mes = '';
+        switch (numeroMes) {
+            case "01":
+                mes = "Enero";
+                break;
+            case "02":
+                mes = "Febrero";
+                break;
+            case "03":
+                mes = "Marzo";
+                break;
+            case "04":
+                mes = "Abril";
+                break;
+            case "05":
+                mes = "Mayo";
+                break;
+            case "06":
+                mes = "Junio";
+                break;
+            case "07":
+                mes = "Julio";
+                break;
+            case "08":
+                mes = "Agosto";
+                break;
+            case "09":
+                mes = "Septiembre";
+                break;
+            case "10":
+                mes = "Octubre";
+                break;
+            case "11":
+                mes = "Noviembre";
+                break;
+            case "12":
+                mes = "Diciembre"
+                break;
+            default:
+                break;
+        }
+        return mes;
+    }
+    let mes = setMesByNumber(fecha.substr(5,2));
+    let diaNumero = fecha.substr(8,2);
     const handleClickVerNota = id=>{
-        console.log(id);
+        window.location.assign(archivo);
     }
     return (
         <div className="articulo__item" onClick={()=>handleClickVerNota(1)}>
             <div className="row w-100 row__articulos">
                 <div className="col-3 imagen__articulo">
-                    <img src="https://images.unsplash.com/photo-1495107334309-fcf20504a5ab?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1350&q=80" className="img-fluid pl-3" alt="nota"/>
+                    <img src={foto} className="img-fluid pl-3" alt="nota"/>
                 </div>
                 <div className="col-2 fecha text-center">
-                    <span className="fecha__numero">12</span>
-                    <span className="fecha__mes">Oct</span>
+                    <span className="fecha__numero">{diaNumero}</span>
+                    <span className="fecha__mes">{mes.substr(0,3)}</span>
                 </div>
                 <div className="col-7 nota__info">
-                    <p href="#" className="titulo__articulo">How to calculate fertilizer application rates</p>
-                    <span className="autor text-muted">Franco Benitez</span>
+                    <p href="#" className="titulo__articulo">{titulo}</p>
+                    <span className="autor text-muted">{nombre}</span>
                 </div>
             </div>
         </div>

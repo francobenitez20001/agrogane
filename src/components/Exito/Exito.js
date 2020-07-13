@@ -5,7 +5,6 @@ import CardActionArea from '@material-ui/core/CardActionArea';
 import CardContent from '@material-ui/core/CardContent';
 import CardMedia from '@material-ui/core/CardMedia';
 import Typography from '@material-ui/core/Typography';
-import avatar from '../../img/caso-exito.jpg'
 import './Exito.css';
 const useStyles = makeStyles({
     root: {
@@ -15,15 +14,15 @@ const useStyles = makeStyles({
       height: 300,
     },
 });
-const Exito = ({titulo}) => {
+const Exito = ({titulo,imagen}) => {
     const classes = useStyles();
     return (
     <Card className={classes.root}>
       <CardActionArea>
         <CardMedia
           className={classes.media}
-          image={avatar}
-          title="Contemplative Reptile"
+          image={imagen}
+          title={titulo}
         />
         <CardContent>
           <Typography gutterBottom variant="h5" component="h2">

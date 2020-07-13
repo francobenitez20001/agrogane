@@ -21,6 +21,10 @@ footer .redes i{
     margin: 0px 15px;
 }
 
+footer .redes a{
+    color: white;
+}
+
 @media(max-width:768px){
     .container__redes{
         flex-direction: column;
