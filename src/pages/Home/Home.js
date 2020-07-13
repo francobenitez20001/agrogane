@@ -31,7 +31,7 @@ export default class Home extends Component {
             this.setState({exito:data.data[0]});
             window.addEventListener('scroll',event=>{
                 let scroll = window.scrollY;
-                if(document.location.href === 'http://localhost:3000/' || document.location.href.includes('caso-exito')||document.location.href === 'https://agrogane.herokuapp.com/'){
+                if(this.props.location.pathname === '/' || this.props.location.pathname === 'caso-exito'){
                     if(scroll>285.60){
                         document.getElementsByClassName('MuiPaper-root')[0].classList.add('showCard');
                         document.getElementsByClassName('explicacion__exito')[0].classList.add('showExplicacionExito');
