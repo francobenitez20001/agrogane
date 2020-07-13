@@ -3,6 +3,7 @@ import Banner from '../../components/Banner/Banner';
 import ListaArticulos from '../../components/ListaArticulos/ListaArticulos';
 import {setActiveItem} from '../../helpers/helpers';
 import {API} from '../../config';
+import Loader from '../../components/Loader/Loader';
 export default class Articulos extends Component {
     constructor(props) {
         super(props);
@@ -24,7 +25,7 @@ export default class Articulos extends Component {
 
     render() {
         return (
-            (this.state.articulos === undefined)?null:
+            (this.state.articulos === undefined)?<Loader/>:
             <>
                 <Banner titulo="Articulos" mensaje="" background="true"/>
                 <hr/>

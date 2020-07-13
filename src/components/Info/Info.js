@@ -10,7 +10,7 @@ const Info = () => {
                             <div className="icono">
                                 <i className="fas fa-users"></i>
                             </div>
-                            <h5>Titulo</h5>
+                            <h5>Foco</h5>
                             <p>Ayudamos a nuestros clientes a mejorar sus resultados a través de la transformación del negocio, partiendo desde la definición estratégica hasta la mejora operativa, la redefinición de los procesos productivos y la implementación tecnológica necesaria. </p>
                         </div>
                     </div>
@@ -19,7 +19,7 @@ const Info = () => {
                             <div className="icono">
                                 <i className="fas fa-leaf"></i>
                             </div>
-                            <h5>Titulo</h5>
+                            <h5>Forma</h5>
                             <p>Acompañamos la decisión de inversión para maximizar el retorno, pero asegurando la relación riesgo-retorno de acuerdo al perfil de cada inversor y a sus objetivos. </p>
                         </div>
                     </div>
@@ -28,7 +28,7 @@ const Info = () => {
                             <div className="icono">
                                 <i className="fas fa-globe-asia"></i>
                             </div>
-                            <h5>Titulo</h5>
+                            <h5>Alcance</h5>
                             <p>Segmentamos nuestras soluciones de inversión en BIG (+2M U$S), MID (500K-1.9M U$S), SMALL (100K-499K U$S) y FIRST INVESTMENT (10K-99k U$S), adaptando los planes de negocio y las soluciones a cada tipo de inversor. </p>
                         </div>
                     </div>

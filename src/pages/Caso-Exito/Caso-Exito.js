@@ -3,7 +3,8 @@ import Banner from '../../components/Banner/Banner';
 import CasoExito from '../../components/CasoExito/CasoExito';
 import Footer from '../../components/Footer/Footer';
 import {setActiveItem} from '../../helpers/helpers';
-import {API} from '../../config'
+import {API} from '../../config';
+import Loader from '../../components/Loader/Loader';
 export default class CasoExitoPage extends Component {
     constructor(props){
         super(props);
@@ -28,7 +29,7 @@ export default class CasoExitoPage extends Component {
     }
     render() {
         return (
-            (this.state.casos === undefined)?null:
+            (this.state.casos === undefined)?<Loader/>:
             <>
                 <Banner titulo="Agrogane - Casos de éxito" background="true"/>
                 {this.state.casos.map(caso=>(

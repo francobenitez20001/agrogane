@@ -33,8 +33,8 @@ export default class Navbar extends Component {
             <div className="menu__container">
                 <div className="logo">
                     <i onClick={this.handleClickMenu} className="fas fa-align-left icon-menu"></i>
-                    <h1 className="logo-title">Agrogane</h1>
-                    <h2 className="title-mobile">Agrogane</h2>
+                    <h1 className="logo-title">AgroGane</h1>
+                    <h2 className="title-mobile">AgroGane</h2>
                 </div>
                 <nav>
                     <span id="headerPointer" className="c-header__pointer"></span>
@@ -43,24 +43,25 @@ export default class Navbar extends Component {
                             onMouseLeave={() => this.handleOverLink(false,0)}>
                             <Link name="inicio" to="/" onClick={()=>this.handleClickOcultarMenu()} className="item-menu">Inicio</Link>
                         </li>
-                        <li onMouseOver={()=>this.handleOverLink(true,1)}
+                        <li onMouseOver={()=>this.handleOverLink(true,1)} 
                             onMouseLeave={() => this.handleOverLink(false,1)}>
-                            <Link name="servicios" to="/servicios" onClick={()=>this.handleClickOcultarMenu()} className="item-menu">Servicios</Link>
+                            <Link name="nosotros" to="/nosotros" onClick={()=>this.handleClickOcultarMenu()} className="item-menu">Nosotros</Link>
                         </li>
                         <li onMouseOver={()=>this.handleOverLink(true,2)} 
                             onMouseLeave={() => this.handleOverLink(false,2)}>
-                            <Link name="nosotros" to="/nosotros" onClick={()=>this.handleClickOcultarMenu()} className="item-menu">Nosotros</Link>
+                            <Link name="caso-exito" to="/caso-exito" onClick={()=>this.handleClickOcultarMenu()} className="item-menu">Casos de éxito</Link>
                         </li>
                     </ul>
                     <ul className="list__menu">
-                        <li onMouseOver={()=>this.handleOverLink(true,3)} 
+                        <li onMouseOver={()=>this.handleOverLink(true,3)}
                             onMouseLeave={() => this.handleOverLink(false,3)}>
-                            <Link name="articulos" to="/articulos" onClick={()=>this.handleClickOcultarMenu()} className="item-menu">Articulos</Link>
+                            <Link name="servicios" to="/servicios" onClick={()=>this.handleClickOcultarMenu()} className="item-menu">Servicios</Link>
                         </li>
                         <li onMouseOver={()=>this.handleOverLink(true,4)} 
                             onMouseLeave={() => this.handleOverLink(false,4)}>
-                            <Link name="caso-exito" to="/caso-exito" onClick={()=>this.handleClickOcultarMenu()} className="item-menu">Casos de éxito</Link>
+                            <Link name="articulos" to="/articulos" onClick={()=>this.handleClickOcultarMenu()} className="item-menu">Articulos</Link>
                         </li>
+            
                         <li className="d-none" onMouseOver={()=>this.handleOverLink(true,5)} 
                             onMouseLeave={() => this.handleOverLink(false,5)}>
                             <a href="/" className="item-menu">Contacto</a>

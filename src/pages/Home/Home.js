@@ -51,7 +51,7 @@ export default class Home extends Component {
             <>
                 <div className="banner__home">
                     <p>Transformando ideas en negocios reales</p>
-                    <p className="name__banner">Agrogane</p>
+                    <p className="name__banner">AgroGane</p>
                 </div>
                 {(this.state.exito === undefined)?null:<CasoExito caso={this.state.exito}/>}    
                 <Info/>

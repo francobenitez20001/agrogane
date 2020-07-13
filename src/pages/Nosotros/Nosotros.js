@@ -3,6 +3,7 @@ import nosotros from '../../img/nosotros.jpg';
 import Info from '../../components/Info/Info';
 import Footer from '../../components/Footer/Footer';
 import {API} from '../../config';
+import Loader from '../../components/Loader/Loader';
 import './Nosotros.css';
 
 import {setActiveItem} from '../../helpers/helpers';
@@ -35,7 +36,7 @@ export default class Nosotros extends Component {
     }
     render() {
         return (
-            (this.state.data === undefined || this.state.autor === undefined)?null:
+            (this.state.data === undefined || this.state.autor === undefined)?<Loader/>:
             <>
                 <div className="container-fluid container__info">
                     <div className="row">
@@ -60,7 +61,7 @@ export default class Nosotros extends Component {
                             <span className="text-muted">{this.state.autor.tituloProfesional}</span>
                         </div>
                         <div className="col-12 col-md-9 texto__dueño">
-                            <p>{this.state.autor.descripcion}</p>
+                            <p style={{whiteSpace:"break-spaces"}}>{this.state.autor.descripcion}</p>
                         </div>
                     </div>
                 </div>
