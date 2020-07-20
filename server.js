@@ -22,6 +22,9 @@ app.get('/nosotros', function (req, res) {
 app.get('/articulos', function (req, res) {
     res.sendFile(path.join(__dirname, 'build', 'index.html'));
 });
+app.get('/articulo/id', function (req, res) {
+    res.sendFile(path.join(__dirname, 'build', 'index.html'));
+});
 app.get('/caso-exito', function (req, res) {
     res.sendFile(path.join(__dirname, 'build', 'index.html'));
 });
