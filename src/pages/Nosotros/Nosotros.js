@@ -52,7 +52,7 @@ export default class Nosotros extends Component {
                 <Info/>
                 <div className="container-fluid">
                     <div className="titulo__dueño">
-                        <h3>Agrogane Fundador</h3>
+                        <h3>AgroGane Fundador</h3>
                     </div>
                     <div className="contenido__dueño row">
                         <div className="col-12 col-md-3 datos__dueño">

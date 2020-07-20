@@ -1,0 +1,22 @@
+.titulo-articulo-single{
+    font-family: 'Raleway', sans-serif;
+    font-weight: bold;
+    transition:all 0.5s ease 0s;
+}
+
+.wrapper-single-articulo hr{
+    background-color: #2e7737 ;
+}
+
+.wrapper-single-articulo p{
+    font-size: 19px;
+    line-height: 34px;
+    font-family: 'Raleway', sans-serif;
+}
+
+@media(max-width:768px){
+    .wrapper-single-articulo p{
+        font-size: 17px;
+        line-height: 30px;
+    }
+}

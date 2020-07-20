@@ -27,7 +27,7 @@ const Servicios = () => {
     return (
         (services === undefined)?<Loader/>:
         <>
-            <Banner titulo="Agrogane Servicios"
+            <Banner titulo="AgroGane Servicios"
                     mensaje="Junto con un grupo de profesionales de vasta experiencia, somos un
                     equipo de especialistas que garantizamos el máximo rendimiento de los
                     activos de nuestros clientes."/>

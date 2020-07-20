@@ -1,5 +1,4 @@
 import React, { Component } from 'react';
-import {Link} from 'react-router-dom'
 import './Home.css';
 import Info from '../../components/Info/Info';
 import CasoExito from '../../components/CasoExito/CasoExito';
@@ -55,21 +54,6 @@ export default class Home extends Component {
                 </div>
                 {(this.state.exito === undefined)?null:<CasoExito caso={this.state.exito}/>}    
                 <Info/>
-                <div className="jumbotron container-fluid container__banner__info">
-                    <div className="row row-servicios">
-                        <div className="col-12 col-md-6">
-                            <Link className="enlace-servicios my-4" to="/nosotros">Industias en donde nos especializamos</Link>
-                            <Link className="enlace-servicios my-4" to="/servicios">Nuestros Servicios</Link>
-                        </div>
-                        <div className="col-12 col-md-5 descripcion-servicios">
-                            <h3>Agiles y flexibles</h3>
-                            <span className="text-muted text-justify">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quis obcaecati distinctio autem doloribus quas maiores sunt ducimus minus</span>
-                        </div>
-                        <div className="col-md-1 info-seccion">
-                            <h4 className="c-two-boxes__title">Lo que hacemos</h4>
-                        </div>
-                    </div>
-                </div>
                 <div className="container-fluid mb-3">
                     <div className="row c__art__test">
                         <div className="col-12 col-md-5">
