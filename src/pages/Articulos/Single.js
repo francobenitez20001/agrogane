@@ -6,6 +6,7 @@ import {API} from '../../config';
 const SingleArticulo = (props) => {
     const [loading, setLoading] = useState(true);
     const [data, setData] = useState(undefined);
+    const [contacto, setContacto] = useState(undefined);
 
     useEffect(() => {
         getData();
@@ -15,13 +16,19 @@ const SingleArticulo = (props) => {
         try {
             fetch(`${API}/articulos/${props.match.params.id}`).then(res=>res.json()).then(res=>{
                 setData(res.data[0]);
-                setLoading(false);
+                getContactoData();
             })
         } catch (error) {
             console.log(error);
         }
     }
-
+    
+    const getContactoData = ()=>{
+        fetch(`${API}/contacto`).then(res=>res.json()).then(data=>{
+            setContacto(data.data[0]);
+            setLoading(false);
+        })
+    };
     return (
         (loading)?<Loader/>:
         <>  
@@ -49,7 +56,12 @@ const SingleArticulo = (props) => {
                         </div>
                     </div>
             </div>
-            <Footer/>
+            <Footer telefonoPrincipal={contacto.telefonoPrincipal}
+                        telefonoSecundario={contacto.telefonoSecundario}
+                        email={contacto.email}
+                        twitter={contacto.twitter}
+                        instagram={contacto.instagra}
+                        facebook={contacto.facebook}/>
         </>
     );
 }

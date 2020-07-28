@@ -9,7 +9,8 @@ export default class CasoExitoPage extends Component {
     constructor(props){
         super(props);
         this.state = {
-            casos:undefined
+            casos:undefined,
+            contacto:undefined
         };
     }
     componentDidMount(){
@@ -19,6 +20,13 @@ export default class CasoExitoPage extends Component {
     getCasos(){
         fetch(`${API}/caso-exito?limit=10`).then(res=>res.json()).then(casos=>{
             this.setState({casos:casos.data});
+            this.getContactoData();
+        })
+    }
+
+    getContactoData(){
+        fetch(`${API}/contacto`).then(res=>res.json()).then(data=>{
+            this.setState({contacto:data.data[0]});
             setTimeout(() => {
                 for (let index = 0; index < document.getElementsByClassName('MuiPaper-root').length; index++) {
                     document.getElementsByClassName('MuiPaper-root')[index].classList.add('showCard');
@@ -26,16 +34,22 @@ export default class CasoExitoPage extends Component {
                 }
             }, 10);
         })
-    }
+    };
+
     render() {
         return (
-            (this.state.casos === undefined)?<Loader/>:
+            (this.state.casos === undefined || this.state.contacto === undefined)?<Loader/>:
             <>
                 <Banner titulo="Agrogane - Casos de éxito" background="true"/>
                 {this.state.casos.map(caso=>(
                    <CasoExito key={caso.idCaso} caso={caso} moreInfo="false"/> 
                 ))}
-                <Footer/>
+                <Footer telefonoPrincipal={this.state.contacto.telefonoPrincipal}
+                        telefonoSecundario={this.state.contacto.telefonoSecundario}
+                        email={this.state.contacto.email}
+                        twitter={this.state.contacto.twitter}
+                        instagram={this.state.contacto.instagra}
+                        facebook={this.state.contacto.facebook}/>
             </>
         )
     }

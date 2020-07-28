@@ -10,7 +10,8 @@ export default class Home extends Component {
     constructor(props) {
         super(props);
         this.state = {
-            servicios:undefined
+            servicios:undefined,
+            contacto:undefined
         };
     }
     
@@ -26,12 +27,23 @@ export default class Home extends Component {
     async getServicios(){
         try {
             fetch(`${API}/servicios?limit=10`).then(res=>res.json()).then(response=>{
-                this.setState({servicios:response.data})
+                this.setState({servicios:response.data});
+                this.getContactoData();
             })
         } catch (error) {
             console.log(error);
         }
     }
+
+    async getContactoData(){
+        try {
+            fetch(`${API}/contacto`).then(res=>res.json()).then(data=>{
+                this.setState({contacto:data.data[0]});
+            })
+        } catch (error) {
+           console.log(error); 
+        }
+    };
 
     render() {
         return (
@@ -42,7 +54,7 @@ export default class Home extends Component {
                 </div>  
                 <Info/>
                 <div className="container-fluid my-3">
-                {(this.state.servicios === undefined)?null:
+                {(this.state.servicios === undefined || this.state.contacto === undefined)?null:
                     this.state.servicios.map(servicio=>(
                         <div className="row my-3" key={servicio.idServicio}>
                             <div className="col-12 col-md-4 text-center">
@@ -59,7 +71,14 @@ export default class Home extends Component {
                     ))
                 }
                 </div>
-                <Footer/>
+                {(this.state.contacto === undefined)?null:
+                <Footer telefonoPrincipal={this.state.contacto.telefonoPrincipal}
+                        telefonoSecundario={this.state.contacto.telefonoSecundario}
+                        email={this.state.contacto.email}
+                        twitter={this.state.contacto.twitter}
+                        instagram={this.state.contacto.instagra}
+                        facebook={this.state.contacto.facebook}/>
+                }
             </>
         )
     }
