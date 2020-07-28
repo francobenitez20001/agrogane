@@ -34,6 +34,7 @@ export default class Articulos extends Component {
                         {this.state.articulos.map(articulo=>(
                             <div className="col-12 col-md-4" key={articulo.idArticulo}>
                                 <ListaArticulos foto={articulo.imagen}
+                                                idArticulo={articulo.idArticulo}
                                                 archivo={articulo.archivo}
                                                 fecha={articulo.fecha}
                                                 nombre={articulo.nombre}

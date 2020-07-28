@@ -16,6 +16,7 @@ const ArticulosRecientes = () => {
             <hr/>
             {data.map(articulo=>(
                 <ListaArticulos key={articulo.idArticulo}
+                                idArticulo={articulo.idArticulo}
                                 foto={articulo.imagen}
                                 archivo={articulo.archivo}
                                 fecha={articulo.fecha}

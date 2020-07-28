@@ -3,7 +3,6 @@ import Loader from '../../components/Loader/Loader';
 import Footer from '../../components/Footer/Footer';
 import './style/Single.css';
 import {API} from '../../config';
-import { Link } from 'react-router-dom';
 const SingleArticulo = (props) => {
     const [loading, setLoading] = useState(true);
     const [data, setData] = useState(undefined);
@@ -42,7 +41,7 @@ const SingleArticulo = (props) => {
                     <p>{data.resumen}</p>
                     <div className="moreInfo d-flex justify-content-between mb-4">
                         {(data.archivo !== "0" && data.archivo !== null)?
-                            <Link to={data.archivo} style={{color:"#2e7737"}}>Ver articulo Completo</Link>            
+                            <a target="blank" href={data.archivo} style={{color:"#2e7737"}}>Ver articulo Completo</a>            
                         :null}
                         <div className="info__testimonio text-right">
                             <img src={data.foto} alt={data.foto} className="img-fluid"/>

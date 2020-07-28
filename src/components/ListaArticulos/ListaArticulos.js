@@ -2,7 +2,7 @@ import React from 'react';
 
 import './ListaArticulos.css';
 import { Link } from 'react-router-dom';
-const ListaArticulos = ({foto,archivo,fecha,nombre,titulo}) => {
+const ListaArticulos = ({idArticulo,foto,archivo,fecha,nombre,titulo}) => {
     const setMesByNumber = numeroMes=>{
         let mes = '';
         switch (numeroMes) {
@@ -50,7 +50,7 @@ const ListaArticulos = ({foto,archivo,fecha,nombre,titulo}) => {
     let mes = setMesByNumber(fecha.substr(5,2));
     let diaNumero = fecha.substr(8,2);
     return (
-        <Link to="/articulo/1" style={{textDecoration:'none'}}>
+        <Link to={{pathname:`/articulo/${idArticulo}`}} style={{textDecoration:'none'}}>
             <div className="articulo__item">
                 <div className="row w-100 row__articulos">
                     <div className="col-3 imagen__articulo">
