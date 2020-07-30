@@ -20,7 +20,7 @@
 
 .nosotros__txt h6{
     font-family: "Lato";
-    font-size: 16px;
+    font-size: 18px;
     line-height: 1.3;
     margin-bottom: 18px;
     font-weight: 400;
@@ -61,6 +61,11 @@
 
 .container__info .imagen__info{
     display: none;
+}
+
+.container__info .imagen__info img{
+    max-height: 400px;
+    width: 90%;
 }
 .datos__dueño{
     text-align: center;

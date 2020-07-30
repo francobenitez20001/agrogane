@@ -1,5 +1,4 @@
-import React, { Component } from 'react'
-import nosotros from '../../img/nosotros.jpg';
+import React, { Component } from 'react';
 import Info from '../../components/Info/Info';
 import Footer from '../../components/Footer/Footer';
 import {API} from '../../config';
@@ -41,7 +40,7 @@ export default class Nosotros extends Component {
                 <div className="container-fluid container__info">
                     <div className="row">
                         <div className="col-md-6 imagen__info">
-                            <img src={nosotros} alt={nosotros} className="img-fluid"/>
+                            <img src={this.state.data.header} alt={this.state.data.header}/>
                         </div>
                         <div className="col-md-6 nosotros__txt">
                             <h2>Agrogane</h2>
