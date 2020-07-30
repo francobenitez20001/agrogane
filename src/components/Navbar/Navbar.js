@@ -59,7 +59,7 @@ export default class Navbar extends Component {
                         </li>
                         <li onMouseOver={()=>this.handleOverLink(true,4)} 
                             onMouseLeave={() => this.handleOverLink(false,4)}>
-                            <Link name="articulos" to="/articulos" onClick={()=>this.handleClickOcultarMenu()} className="item-menu">Articulos</Link>
+                            <Link name="articulos" to="/articulos" onClick={()=>this.handleClickOcultarMenu()} className="item-menu">Artículos</Link>
                         </li>
             
                         <li className="d-none" onMouseOver={()=>this.handleOverLink(true,5)} 

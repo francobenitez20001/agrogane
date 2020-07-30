@@ -10,6 +10,7 @@ import {setActiveItem} from '../../helpers/helpers';
 
 const Servicios = () => {
     const [services, setservices] = React.useState(undefined);
+    const [contacto, setContacto] = React.useState(undefined);
     React.useEffect(() => {
         setActiveItem(window.location.href);
         getServices();
@@ -19,13 +20,21 @@ const Servicios = () => {
         try {
             fetch(`${API}/servicios?limit=10`).then(res=>res.json()).then(data=>{
                 setservices(data.data);
-            })
+                getContactoData();
+            });
         } catch (error) {
             console.log(error);
         }
-    }
+    };
+
+    const getContactoData = async()=>{
+        fetch(`${API}/contacto`).then(res=>res.json()).then(data=>{
+            setContacto(data.data[0]);
+        })
+    };
+
     return (
-        (services === undefined)?<Loader/>:
+        (services === undefined || contacto === undefined)?<Loader/>:
         <>
             <Banner titulo="AgroGane Servicios"
                     mensaje="Junto con un grupo de profesionales de vasta experiencia, somos un
@@ -46,7 +55,12 @@ const Servicios = () => {
                     ))}
                 </div>
             </section>
-            <Footer/>
+            <Footer telefonoPrincipal={contacto.telefonoPrincipal}
+                        telefonoSecundario={contacto.telefonoSecundario}
+                        email={contacto.email}
+                        twitter={contacto.twitter}
+                        instagram={contacto.instagra}
+                        facebook={contacto.facebook}/>
         </>
     );
 }
