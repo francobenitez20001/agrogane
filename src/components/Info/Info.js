@@ -1,6 +1,15 @@
-import React from 'react';
+import React,{useEffect} from 'react';
 import './Info.css';
 const Info = () => {
+    useEffect(() => {
+        mostrarCajas();
+    }, []);
+
+    const mostrarCajas = ()=>{
+        for (let index = 0; index < document.getElementsByClassName('caja-info').length; index++) {
+            document.getElementsByClassName('caja-info')[index].classList.add('showCaja');
+        }
+    }
     return (
         <>
             <div className="container-fluid" style={{backgroundColor:"#facc2e"}}>
