@@ -1,2 +1,2 @@
-const API = 'https://api-agrogane.herokuapp.com/api';
+const API = 'https://agrogane.com.ar/api/api';
 export {API}
