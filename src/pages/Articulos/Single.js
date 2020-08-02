@@ -32,7 +32,6 @@ const SingleArticulo = (props) => {
     return (
         (loading)?<Loader/>:
         <>  
-            {console.log(data)}
             <div className="wrapper-single-articulo container">
                 <div className="row w-100" style={{marginLeft:"0px"}}>
                     <div className="col-12 col-md-6 py-3">
