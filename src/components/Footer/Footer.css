@@ -16,6 +16,14 @@ footer ul li{
     margin: 0px 20px;
 }
 
+footer ul li a{
+    color: white;
+}
+
+footer ul li a:hover{
+    color: white;
+}
+
 footer .redes i{
     font-size: 20px;
     margin: 0px 15px;
