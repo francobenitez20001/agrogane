@@ -68,7 +68,7 @@ export default class Nosotros extends Component {
                             <span className="text-muted">{this.state.autor.tituloProfesional}</span>
                             <div>
                                 <a className="mx-2" href={this.state.contacto.linkedin} target="blank"><i style={{fontSize:'28px',marginTop:'10px',color:'black'}} className="fab fa-linkedin"></i></a>
-                                <a className="mx-2" href={`mailto:${this.state.contacto.email}`} target="blank"><i style={{fontSize:'28px',marginTop:'10px',color:'black'}} className="fas fa-envelope"></i></a>
+                                <a className="mx-2" href={`mailto:${this.state.contacto.email_personal}`} target="blank"><i style={{fontSize:'28px',marginTop:'10px',color:'black'}} className="fas fa-envelope"></i></a>
                             </div>
                         </div>
                         <div className="col-12 col-md-9 texto__dueño">
