@@ -1,5 +1,4 @@
 import React, { Component } from 'react';
-import Info from '../../components/Info/Info';
 import Footer from '../../components/Footer/Footer';
 import {API} from '../../config';
 import Loader from '../../components/Loader/Loader';
@@ -58,7 +57,6 @@ export default class Nosotros extends Component {
                         </div>
                     </div>
                 </div>
-                <Info/>
                 <div className="container-fluid">
                     <div className="titulo__dueño">
                         <h3>AgroGane Fundador</h3>
