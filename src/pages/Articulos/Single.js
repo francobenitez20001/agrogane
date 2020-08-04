@@ -50,7 +50,7 @@ const SingleArticulo = (props) => {
                             <a target="blank" href={data.archivo} style={{color:"#2e7737"}}>Ver articulo Completo</a>            
                         :null}
                         <div className="info__testimonio text-right">
-                            <img src={`https://agrogane.com.ar/api/public/ig/${data.foto}`} alt={data.foto} className="img-fluid"/>
+                            <img src={`https://agrogane.com.ar/api/public/img/${data.foto}`} alt={data.foto} className="img-fluid"/>
                             <p><span className="nombre__testimonio">{data.nombre},</span> {data.cargo}</p>
                         </div>
                     </div>
