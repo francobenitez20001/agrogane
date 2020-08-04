@@ -49,7 +49,7 @@ export default class Nosotros extends Component {
                 <div className="container-fluid container__info">
                     <div className="row">
                         <div className="col-md-6 imagen__info">
-                            <img src={this.state.data.header} alt={this.state.data.header}/>
+                            <img src={`https://agrogane.com.ar/api/public/img/${this.state.data.header}`} alt={this.state.data.header}/>
                         </div>
                         <div className="col-md-6 nosotros__txt">
                             <h2>Agrogane</h2>
@@ -63,7 +63,7 @@ export default class Nosotros extends Component {
                     </div>
                     <div className="contenido__dueño row">
                         <div className="col-12 col-md-3 datos__dueño">
-                            <img src={this.state.autor.foto} alt={this.state.autor.nombre} className="img-fluid"/>
+                            <img src={`https://agrogane.com.ar/api/public/img/${this.state.autor.foto}`} alt={this.state.autor.nombre} className="img-fluid"/>
                             <p className="dueño__nombre">{this.state.autor.nombre}</p>
                             <span className="text-muted">{this.state.autor.tituloProfesional}</span>
                             <div>

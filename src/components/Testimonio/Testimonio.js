@@ -14,7 +14,7 @@ const Testimonio = () => {
             <i className="fas fa-quote-left icono-testimonio"></i>
             <span className="text-muted testimonio">{data.testimonio}</span>
             <div className="info__testimonio">
-                <img src={data.foto} alt={data.nombre} className="img-fluid"/>
+                <img src={`https://agrogane.com.ar/api/public/img/${data.foto}`} alt={data.nombre} className="img-fluid"/>
                 <p><span className="nombre__testimonio">{data.nombre},</span> {data.cargo}</p>
             </div>
         </>

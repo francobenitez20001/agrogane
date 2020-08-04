@@ -21,7 +21,7 @@ const Exito = ({titulo,imagen}) => {
       <CardActionArea>
         <CardMedia
           className={classes.media}
-          image={imagen}
+          image={`https://agrogane.com.ar/api/public/img/${imagen}`}
           title={titulo}
         />
         <CardContent>
