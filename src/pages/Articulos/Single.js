@@ -35,7 +35,7 @@ const SingleArticulo = (props) => {
             <div className="wrapper-single-articulo container">
                 <div className="row w-100" style={{marginLeft:"0px"}}>
                     <div className="col-12 col-md-6 py-3">
-                        <img src={data.imagen} alt={data.titulo} className="img-fluid" style={{maxHeight:"380px"}}/>
+                        <img src={`https://agrogane.com.ar/api/public/img/${data.imagen}`} alt={data.titulo} className="img-fluid" style={{maxHeight:"380px"}}/>
                     </div>
                     <div className="col-12 col-md-6 py-3 d-flex align-items-center">
                         <h3 className="titulo-articulo-single mr-4">
@@ -50,7 +50,7 @@ const SingleArticulo = (props) => {
                             <a target="blank" href={data.archivo} style={{color:"#2e7737"}}>Ver articulo Completo</a>            
                         :null}
                         <div className="info__testimonio text-right">
-                            <img src={data.foto} alt={data.foto} className="img-fluid"/>
+                            <img src={`https://agrogane.com.ar/api/public/ig/${data.foto}`} alt={data.foto} className="img-fluid"/>
                             <p><span className="nombre__testimonio">{data.nombre},</span> {data.cargo}</p>
                         </div>
                     </div>
