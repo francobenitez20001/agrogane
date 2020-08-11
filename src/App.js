@@ -8,6 +8,7 @@ import Servicios from './pages/Servicios/Servicios';
 import Articulos from './pages/Articulos/Articulos';
 import CasoExitoPage from './pages/Caso-Exito/Caso-Exito';
 import ArticuloSingle from './pages/Articulos/Single';
+import NotFound from './pages/NotFound';
 
 function App() {
   return (
@@ -20,6 +21,7 @@ function App() {
             <Route exact path='/articulos' component={Articulos}/>
             <Route exact path='/caso-exito' component={CasoExitoPage}/>
             <Route exact path='/articulo/:id' component={ArticuloSingle}/>
+            <Route component={NotFound}/>
         </Switch>
       </Layout>
     </BrowserRouter>

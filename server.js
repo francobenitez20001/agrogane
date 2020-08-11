@@ -28,5 +28,9 @@ app.get('/articulo/:id', function (req, res) {
 app.get('/caso-exito', function (req, res) {
     res.sendFile(path.join(__dirname, 'build', 'index.html'));
 });
+app.use(function(req, res, next) {
+    res.sendFile(path.join(__dirname,"build","index.html"));
+});
+
 
 app.listen(port);
