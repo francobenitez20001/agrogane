@@ -39,26 +39,6 @@
     border-color: #2e7737;
 }
 
-.datos__dueño img{
-    width: 150px;
-    height: 150px;
-    border-radius: 50%;
-    margin: 0px 0px 10px 0px;
-}
-
-.datos__dueño .dueño__nombre{
-    font-family: 'Raleway', sans-serif;
-    color: #3b3b3b;
-    font-weight: 800;
-    font-size: 16px;
-    margin-bottom: 0px;
-}
-
-.datos__dueño span{
-    font-family: 'Raleway', sans-serif;
-    font-weight: bold !important;
-}
-
 .container__info .imagen__info{
     display: none;
 }
@@ -84,9 +64,6 @@
 }
 
 @media(max-width:768px){
-    .datos__dueño{
-        margin-bottom: 17px;
-    }
     .nosotros__txt{
         padding: 10px 12px;
     }

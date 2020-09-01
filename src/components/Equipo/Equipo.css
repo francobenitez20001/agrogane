@@ -1,0 +1,21 @@
+.container__avatar{
+    cursor: pointer;
+}
+
+.container__avatar:hover{
+    -webkit-box-shadow: 1px 2px 4px #2e2e2e;
+    border-radius: 10px;
+    transition:all .5 ease;
+}
+
+@media(min-width:1024px){
+    .container__avatar{
+        padding: 15px 0px;
+    }
+}
+
+@media(max-width:768px){
+    .container__avatar{
+        margin: 10px 0px;
+    }
+}

@@ -6,6 +6,8 @@ import Testimonio from '../../components/Testimonio/Testimonio';
 import './Nosotros.css';
 
 import {setActiveItem} from '../../helpers/helpers';
+import Avatar from '../../components/Avatar';
+import Equipo from '../../components/Equipo';
 
 export default class Nosotros extends Component {
     constructor(props) {
@@ -13,7 +15,8 @@ export default class Nosotros extends Component {
         this.state = {
             data:undefined,
             autor:undefined,
-            contacto:undefined
+            contacto:undefined,
+            autores:[]
         }
     }
     
@@ -24,8 +27,8 @@ export default class Nosotros extends Component {
     getData(){
         fetch(`${API}/nosotros`).then(res=>res.json()).then(data=>{
             this.setState({data:data.data[0]});
-            fetch(`${API}/autor/1`).then(res=>res.json()).then(autor=>{
-                this.setState({autor:autor.data[0]});
+            fetch(`${API}/autor`).then(res=>res.json()).then(autor=>{
+                this.setState({autor:autor.data[0],autores:autor.data});
                 setTimeout(() => {
                     for (let index = 0; index < document.getElementsByClassName('caja-info').length; index++) {
                         document.getElementsByClassName('caja-info')[index].classList.add('showCaja');
@@ -62,14 +65,12 @@ export default class Nosotros extends Component {
                         <h3>AgroGane Fundador</h3>
                     </div>
                     <div className="contenido__dueño row">
-                        <div className="col-12 col-md-3 datos__dueño">
-                            <img src={`https://agrogane.com.ar/api/public/img/${this.state.autor.foto}`} alt={this.state.autor.nombre} className="img-fluid"/>
-                            <p className="dueño__nombre">{this.state.autor.nombre}</p>
-                            <span className="text-muted">{this.state.autor.tituloProfesional}</span>
-                            <div>
-                                <a className="mx-2" href={this.state.contacto.linkedin} target="blank"><i style={{fontSize:'28px',marginTop:'10px',color:'black'}} className="fab fa-linkedin"></i></a>
-                                <a className="mx-2" href={`mailto:${this.state.contacto.email_personal}`} target="blank"><i style={{fontSize:'28px',marginTop:'10px',color:'black'}} className="fas fa-envelope"></i></a>
-                            </div>
+                        <div className="col-12 col-md-3">
+                            <Avatar foto={this.state.autor.foto}
+                                    nombre={this.state.autor.nombre}
+                                    tituloProfesional={this.state.autor.tituloProfesional}
+                                    linkedin={this.state.contacto.linkedin}
+                                    email={this.state.contacto.email_personal}/>
                         </div>
                         <div className="col-12 col-md-9 texto__dueño">
                             <p style={{whiteSpace:"break-spaces"}}>{this.state.autor.descripcion}</p>
@@ -78,6 +79,10 @@ export default class Nosotros extends Component {
                     <div className="col-12 my-5 text-right container__testimonio">
                             <Testimonio/>
                     </div>
+                </div>
+                <div className="container-fluid">
+                    <h3 className="titulo__dueño" style={{fontWeight:'500'}}>Nuestro equipo</h3>
+                    <Equipo autores={this.state.autores}/>
                 </div>
                 <Footer telefonoPrincipal={this.state.contacto.telefonoPrincipal}
                         telefonoSecundario={this.state.contacto.telefonoSecundario}
