@@ -5,7 +5,7 @@ const Avatar = (props) => {
         <div className="datos__dueño">
             <img src={`https://agrogane.com.ar/api/public/img/${props.foto}`} alt={props.nombre} className="img-fluid"/>
             <p className="dueño__nombre">{props.nombre}</p>
-            <span className="text-muted">{props.tituloProfesional}</span>
+            <span className="text-muted">{(props.seccionEquipo)?props.cargo:props.tituloProfesional}</span>
             {(props.seccionEquipo)?null:
                 <div>
                     <a className="mx-2" href={props.linkedin} target="blank"><i style={{fontSize:'28px',marginTop:'10px',color:'black'}} className="fab fa-linkedin"></i></a>

@@ -5,8 +5,10 @@ import Modal from '../Modal';
 import ModalEquipo from '../ModalEquipo';
 const Equipo = (props) => {
         const [modalIsOpen, setModalIsOpen] = useState(false);
+        const [dataModal, setDataModal] = useState(undefined);
     
         const abrirModalEquipo = data=>{
+                setDataModal(data);
                 setModalIsOpen(true);
         }
 
@@ -17,38 +19,20 @@ const Equipo = (props) => {
     return (
         <>
                 <div className="row my-4 mx-1">
-                        <div className="col-12 col-sm-6 col-md-3 container__avatar" onClick={()=>abrirModalEquipo(props.autores[0])}>
-                                <Avatar foto={props.autores[0].foto}
-                                        nombre={props.autores[0].nombre}
-                                        descripcion={props.autores[0].descripcion}
-                                        tituloProfesional={props.autores[0].tituloProfesional}
-                                        seccionEquipo={true}/>
-                        </div>
-                        <div className="col-12 col-sm-6 col-md-3 container__avatar" onClick={()=>abrirModalEquipo(props.autores[0])}>
-                                <Avatar foto={props.autores[0].foto}
-                                        nombre={props.autores[0].nombre}
-                                        descripcion={props.autores[0].descripcion}
-                                        tituloProfesional={props.autores[0].tituloProfesional}
-                                        seccionEquipo={true}/>
-                        </div>
-                        <div className="col-12 col-sm-6 col-md-3 container__avatar" onClick={()=>abrirModalEquipo(props.autores[0])}>
-                                <Avatar foto={props.autores[0].foto}
-                                        nombre={props.autores[0].nombre}
-                                        descripcion={props.autores[0].descripcion}
-                                        tituloProfesional={props.autores[0].tituloProfesional}
-                                        seccionEquipo={true}/>
-                        </div>
-                        <div className="col-12 col-sm-6 col-md-3 container__avatar" onClick={()=>abrirModalEquipo(props.autores[0])}>
-                                <Avatar foto={props.autores[0].foto}
-                                        nombre={props.autores[0].nombre}
-                                        descripcion={props.autores[0].descripcion}
-                                        tituloProfesional={props.autores[0].tituloProfesional}
-                                        seccionEquipo={true}/>
-                        </div>
+                        {props.autores.map(autor=>(
+                                (autor.cargo == 'Founder')?null:
+                                <div key={autor.idAutor} className="col-12 col-sm-6 col-md-3 container__avatar" onClick={()=>abrirModalEquipo(autor)}>
+                                        <Avatar foto={autor.foto}
+                                                nombre={autor.nombre}
+                                                descripcion={autor.descripcion}
+                                                cargo={autor.cargo}
+                                                seccionEquipo={true}/>
+                                </div>
+                        ))}
                 </div>
                 {(!modalIsOpen)?null:
                         <Modal closeModal={closeModal}>
-                                <ModalEquipo autor={props.autores[0]}/>
+                                <ModalEquipo autor={dataModal}/>
                         </Modal>
                 }
         </>
