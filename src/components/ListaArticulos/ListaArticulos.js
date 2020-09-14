@@ -54,7 +54,11 @@ const ListaArticulos = ({idArticulo,foto,archivo,fecha,nombre,titulo}) => {
             <div className="articulo__item">
                 <div className="row w-100 row__articulos">
                     <div className="col-3 imagen__articulo">
-                        <img src={`https://agrogane.com.ar/api/public/img/${foto}`} className="img-fluid pl-3" alt="nota"/>
+                        {(foto === '')?
+                            <img src={`https://agrogane.com.ar/api/public/img/noticia-default.jpg`} className="img-fluid pl-3" alt="nota"/>
+                        :
+                            <img src={`https://agrogane.com.ar/api/public/img/${foto}`} className="img-fluid pl-3" alt="nota"/>
+                        }
                     </div>
                     <div className="col-2 fecha text-center">
                         <span className="fecha__numero">{diaNumero}</span>
